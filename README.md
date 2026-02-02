@@ -1,4 +1,4 @@
-"# 🌐 Developer Portfolio
+# 🌐 Developer Portfolio
 
 ## Project Overview
 
@@ -56,11 +56,17 @@ The design emphasizes simplicity while maintaining a strong technical foundation
 
 portfolio/
 │
+
 ├── components/
+
 ├── pages/
+
 ├── assets/
+
 ├── styles/
+
 └── README.md
+
 
 
 ---
@@ -75,4 +81,4 @@ portfolio/
 ```sh
 npm install
 npm run dev
-The developme
+
