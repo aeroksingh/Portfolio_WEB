@@ -6,6 +6,8 @@ This is my personal developer portfolio designed to showcase my projects, skills
 
 The design emphasizes simplicity while maintaining a strong technical foundation and scalability for future updates.
 
+Live LINK : https://portfolio-web-nu-topaz.vercel.app/
+
 ---
 
 ## Key Features
