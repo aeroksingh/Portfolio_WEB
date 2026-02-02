@@ -1,44 +1,78 @@
-"# 🚀 HireHub — Smart Recruitment & Job Portal Platform
+"# 🌐 Developer Portfolio
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+This is my personal developer portfolio designed to showcase my projects, skills, and experience in a clean, modern, and interactive way. The portfolio focuses on clarity, performance, and real-world presentation, serving as a central place for recruiters and collaborators to explore my work.
 
-HireHub is a full-stack recruitment and job portal platform designed to simplify and modernize the hiring workflow for recruiters and candidates. The project focuses on real-world hiring use cases, clean role-based access, and an API-first architecture suitable for production-level applications.
-
----
-
-## How can I edit this code?
-
-There are multiple ways to work with and customize this application.
-
-### Use Lovable
-
-Simply visit the Lovable Project dashboard and start prompting.
-
-Changes made via Lovable are automatically committed to this repository, making it easy to iterate quickly without local setup.
+The design emphasizes simplicity while maintaining a strong technical foundation and scalability for future updates.
 
 ---
 
-### Use your preferred IDE (Local Development)
+## Key Features
 
-If you prefer working locally with your own IDE:
+### 🎨 Modern & Responsive UI
+- Clean and minimal design
+- Fully responsive across desktop, tablet, and mobile devices
+- Smooth layouts with consistent spacing and typography
 
-**Prerequisites**
-- Node.js & npm (recommended via nvm)
+### 🧩 Component-Based Architecture
+- Modular and reusable components
+- Easy to maintain and extend
+- Scalable folder structure
+
+### ⚡ Performance-Focused
+- Fast load times using Vite
+- Optimized build output
+- Efficient rendering with React
+
+### 📂 Projects Showcase
+- Dedicated section to highlight personal and academic projects
+- Clear project descriptions and tech stacks
+- External links to GitHub repositories and live demos
+
+### 👤 About & Skills Section
+- Personal introduction and background
+- Categorized skills (Frontend, Backend, Tools)
+- Easy to update as skills grow
+
+### 📞 Contact & Social Links
+- Quick access to email and social platforms
+- Clean call-to-action for recruiters
+- Ready for form or backend integration
+
+---
+
+## Tech Stack
+
+- Vite
+- TypeScript
+- React
+- Tailwind CSS
+- shadcn/ui
+
+---
+
+## Project Structure
+
+portfolio/
+│
+├── components/
+├── pages/
+├── assets/
+├── styles/
+└── README.md
+
+
+---
+
+## Running the Project Locally
+
+### Prerequisites
+- Node.js & npm
 - Git
 
-**Steps**
-
+### Setup
 ```sh
-# Step 1: Clone the repository
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install dependencies
 npm install
-
-# Step 4: Start the development server
 npm run dev
+The developme
