@@ -42,46 +42,54 @@ const Navbar = () => {
         }`}
       >
         <div className="glass-card px-6 py-3 flex items-center justify-between">
-          {/* Logo */}
-          <a
-            href="#home"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavClick('#home');
-            }}
-            className="font-mono text-lg font-semibold text-primary"
-          >
-            {'<AS />'}
-          </a>
+          {/* Logo (Left) */}
+          <div className="flex items-center flex-1">
+            <a
+              href="#home"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavClick('#home');
+              }}
+              className="font-mono text-lg font-semibold text-primary"
+            >
+              {'<ashutosh/>'}
+            </a>
+          </div>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation (Center) */}
           {!isMobile && (
-            <div className="flex items-center gap-6">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleNavClick(link.href);
-                  }}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300 font-medium"
+            <>
+              <div className="flex-1 flex items-center justify-center gap-6">
+                {navLinks.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavClick(link.href);
+                    }}
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300 font-medium"
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+
+              {/* Right placeholder / Resume (Right) */}
+              <div className="flex items-center flex-1 justify-end">
+                <motion.a
+                  href="https://drive.google.com/file/d/1TXFQZFJNiEwTqsHB7j8Qs7Tl4yZ4OdIK/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 border border-primary/30 text-primary text-sm font-mono hover:bg-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--neural-blue)/0.3)]"
                 >
-                  {link.label}
-                </a>
-              ))}
-              <motion.a
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 border border-primary/30 text-primary text-sm font-mono hover:bg-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--neural-blue)/0.3)]"
-              >
-                <FileText className="w-4 h-4" />
-                Resume
-              </motion.a>
-            </div>
+                  <FileText className="w-4 h-4" />
+                  Resume
+                </motion.a>
+              </div>
+            </>
           )}
 
           {/* Mobile Menu Toggle */}
@@ -132,7 +140,7 @@ const Navbar = () => {
                   </motion.a>
                 ))}
                 <motion.a
-                  href="/resume.pdf"
+                  href="https://drive.google.com/file/d/1TXFQZFJNiEwTqsHB7j8Qs7Tl4yZ4OdIK/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   initial={{ opacity: 0, x: 20 }}

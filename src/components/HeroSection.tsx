@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const roles = [
   "Backend Specialist",
-  "Neural Network Enthusiast", 
-  "Competitive Programmer"
+  "Machine Learning Enthusiast",
+  "Competitive Programmer",
 ];
 
 const HeroSection = () => {
@@ -39,50 +39,83 @@ const HeroSection = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="col-span-12 lg:col-span-7 glass-card-glow p-8 md:p-12"
+      className="col-span-12 lg:col-span-9 glass-card-glow p-8 md:p-12 relative"
     >
-      <div className="space-y-6">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="flex items-center gap-3"
-        >
-          <div className="w-3 h-3 rounded-full bg-primary animate-pulse-glow" />
-          <span className="text-muted-foreground text-sm font-mono">Available for opportunities</span>
-        </motion.div>
-        
-        <h1 className="text-4xl md:text-6xl font-bold text-foreground">
-          Hi, I'm{' '}
-          <span className="gradient-text">Ashutosh Singh</span>
-        </h1>
-        
-        <div className="h-12 flex items-center">
-          <span className="text-xl md:text-2xl text-muted-foreground font-mono">
-            {'> '}{displayText}
-            <span className="typing-cursor" />
-          </span>
-        </div>
 
-        <div className="flex gap-3 pt-4">
-          <motion.a
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            href="#contact"
-            className="terminal-button"
+      {/* Intro Content */}
+      <div className="flex flex-col lg:flex-row items-center gap-8">
+        <div className="flex-1 space-y-6">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="flex items-center gap-3"
           >
-            ./contact_me.sh
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            href="https://linkedin.com/in/aeroksingh0112"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 rounded-lg border border-border text-foreground hover:border-primary/50 hover:text-primary transition-all duration-300"
-          >
-            View Resume
-          </motion.a>
+            <div className="w-3 h-3 rounded-full bg-primary animate-pulse-glow" />
+            <span className="text-muted-foreground text-sm font-mono">
+              Available for opportunities
+            </span>
+          </motion.div>
+
+          <h1 className="text-4xl md:text-6xl font-bold text-foreground">
+            Hi, I'm{' '}
+            <span className="gradient-text">Ashutosh Singh</span>
+          </h1>
+
+          <div>
+            <p className="text-lg md:text-xl text-foreground leading-relaxed">
+              Welcome 👋
+              <br />
+              I’m Ashutosh Singh — a backend-focused developer who enjoys building
+              scalable systems and solving challenging problems.
+            </p>
+
+            <div className="mt-2">
+              <span className="text-sm font-mono text-muted-foreground">
+                &gt; Backend Engineering | System Design | DSA | Full Stack
+              </span>
+            </div>
+          </div>
+
+          <div className="h-12 flex items-center">
+            <span className="text-xl md:text-2xl text-muted-foreground font-mono">
+              {'> '}{displayText}
+              <span className="typing-cursor" />
+            </span>
+          </div>
+
+          <div className="flex gap-3 pt-4">
+            <motion.a
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              href="#contact"
+              className="terminal-button"
+            >
+              ./contact_me.sh
+            </motion.a>
+
+            <motion.a
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              href="https://drive.google.com/file/d/1TXFQZFJNiEwTqsHB7j8Qs7Tl4yZ4OdIK/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-lg border border-border text-foreground hover:border-primary/50 hover:text-primary transition-all duration-300"
+            >
+              View Resume
+            </motion.a>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="hidden md:block absolute -right-80 lg:-right-50 top-1/2 -translate-y-1/2 pointer-events-none"> */}
+      <div className="hidden md:block absolute right-[-24vw] top-1/2 -translate-y-1/2 pointer-events-none">
+        <div className="w-80 h-80 md:w-96 md:h-96 rounded-full ring-2 ring-cyan-400/40 shadow-[0_0_70px_rgba(34,214,238,0.5)] bg-card overflow-hidden">
+          <img
+            src="/myphoto.JPG"
+            alt="Ashutosh Singh"
+            className="w-full h-full object-cover rounded-full"
+          />
         </div>
       </div>
     </motion.div>

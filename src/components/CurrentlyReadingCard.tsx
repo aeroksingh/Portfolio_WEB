@@ -27,8 +27,8 @@ const CurrentlyReadingCard = () => {
         <div className="flex items-start gap-3 p-3 rounded-lg bg-secondary/30 border border-border/50">
           <Code className="w-5 h-5 text-primary mt-0.5" />
           <div>
-            <p className="text-sm font-medium text-foreground">Deep Learning Architectures</p>
-            <p className="text-xs text-muted-foreground">Neural Networks & Transformers</p>
+            <p className="text-sm font-medium text-foreground">Backend Engineering</p>
+            <p className="text-xs text-muted-foreground">APIs, Auth, Databases & Scalability</p>
           </div>
         </div>
         

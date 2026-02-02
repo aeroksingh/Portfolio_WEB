@@ -28,9 +28,11 @@ const Index = () => {
         <div className="bento-grid gap-8 md:gap-12">
           {/* Hero Section - spans 7 cols on large screens */}
           <HeroSection />
-          
-          {/* About Card - spans 5 cols on large screens */}
-          <AboutCard />
+
+          {/* About Card relocated: full-width section below Hero */}
+          <div id="about" className="col-span-12">
+            <AboutCard />
+          </div>
           
           {/* Problem Solver Card */}
           <ProblemSolverCard />
